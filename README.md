@@ -1,57 +1,144 @@
 # Hi, I'm Muhammad Hakim 👋
 
-Diploma in Information Technology student at UTHM focused on infrastructure, networking, and system deployment.
+Diploma in Information Technology student at UTHM — building real systems, not just projects.
 
-I build hands-on projects involving Linux systems, containerized applications, and enterprise-style network design, with an emphasis on reliability, troubleshooting, and real-world implementation.
+I focus on **infrastructure, networking, and system operations**, with hands-on experience running production-like environments, designing resilient architectures, and managing real users.
+
+My approach is simple:
+**build → deploy → break → monitor → fix → document → improve**
 
 ---
 
 ## 🔥 Featured Projects
 
-### StudexHub
-Internal academic management system built with a real deployment workflow using Docker and Nginx.
+### 🚀 StudexHub (Production System)
 
-- Containerized application using Docker
-- Reverse proxy configuration with Nginx
-- Structured for maintainability and real-world deployment
-- Collaborative development using Git
+A live student productivity platform designed, deployed, and operated with real infrastructure practices.
+
+**What makes this different:**
+
+* Deployed with **Docker + Nginx + Cloudflare Tunnel**
+* Real users (live system, not just localhost)
+* Designed with **operational thinking (runbooks, monitoring, recovery)**
+
+**Key implementations:**
+
+* Containerized app + PostgreSQL with Docker Compose
+* Reverse proxy with Nginx
+* Custom-built authentication system
+* Monitoring stack: **Prometheus + Grafana + Alertmanager**
+* Telegram-based control plane (restart, backup, alerts)
+* Email notification system (Gmail API integration)
+* CI pipeline (lint, build, secret scanning)
+
+**Ops mindset:**
+
+* Defined **MTTD (~10s), MTTR (~5 min)**
+* Structured logging + incident handling
+* Backup & recovery workflows
+* Clear separation between app layer and infrastructure
 
 ---
 
-### Enterprise Campus Network Design
-Designed and implemented a realistic campus network based on a three-tier hierarchical model.
+### 🌐 Enterprise Campus Network Design
 
-- Core, Distribution, and Access layer architecture
-- VLAN segmentation (Staff, Guest, VoIP, Management)
-- Gateway redundancy using HSRP
-- Dynamic routing using OSPF
-- Centralized DHCP with relay configuration
-- VoIP implementation using CME and Option 150
-- ACL-based guest network security
-- Failure testing for redundancy and service continuity
+A full-scale simulated campus network built with enterprise architecture principles.
+
+**Architecture:**
+
+* Three-tier model: **Core / Distribution / Access**
+* VLAN segmentation: Staff, Guest, VoIP, Management
+
+**Key implementations:**
+
+* Inter-VLAN routing (L3 + Router-on-a-stick)
+* **HSRP** for gateway redundancy
+* **OSPF** dynamic routing
+* Centralized DHCP with relay
+* VoIP with CME + Option 150
+* ACL-based network security (Guest isolation)
+
+**Focus areas:**
+
+* Fault tolerance & failover testing
+* Realistic traffic flow design
+* CLI-based troubleshooting
 
 ---
 
-## 🛠️ Skills
-- Linux
-- Computer Networking
-- Docker
-- Nginx
-- Git
-- Cisco Packet Tracer
-- OSPF, VLAN, HSRP
-- Troubleshooting
+### 🤖 Mini Control Plane (Telegram Bot)
+
+A lightweight system operations tool for managing infrastructure remotely.
+
+**Capabilities:**
+
+* Service restart with confirmation flow
+* Backup trigger system
+* Health status checks
+* Alert forwarding from monitoring stack
+
+**Design principles:**
+
+* Runs under a **low-privilege system user**
+* Strict command allowlist
+* Action logging for auditability
+
+---
+
+## 🛠️ Technical Skills
+
+**Infrastructure & Systems**
+
+* Linux (Debian / Ubuntu Server)
+* Systemd, SSH, server management
+
+**Networking**
+
+* VLAN, OSPF, ACL, HSRP
+* Network design & troubleshooting
+
+**DevOps / Platform**
+
+* Docker & Docker Compose
+* Nginx (reverse proxy)
+* Cloudflare Tunnel & Access
+* GitHub Actions (CI basics)
+
+**Monitoring & Operations**
+
+* Prometheus, Grafana, Alertmanager
+* Logging & incident handling
+* Runbooks & operational workflows
+
+**Programming**
+
+* TypeScript (Next.js)
+* Python (automation, bots)
+* SQL (PostgreSQL, Prisma ORM)
 
 ---
 
 ## 🎯 Current Focus
-- Strengthening Linux system administration
-- Deepening networking fundamentals (routing, services, security)
-- Building deployable infrastructure projects
-- Progressing towards Infrastructure / Cloud Engineering
+
+* Strengthening **Linux system administration (deep level)**
+* Advancing **networking → infrastructure → cloud pathway**
+* Improving **observability, reliability, and automation**
+* Scaling systems from **homelab → production-grade practices**
+
+---
+
+## 🧠 Mindset
+
+I don’t just build features. I think in terms of:
+
+* Failure scenarios
+* Recovery speed
+* System reliability
+* Long-term maintainability
 
 ---
 
 ## 📫 Contact
-- LinkedIn: https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8
-- Email: hakimz.7117@gmail.com
+
+* LinkedIn: https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8
+* Email: [hakimz.7117@gmail.com](mailto:hakimz.7117@gmail.com)
