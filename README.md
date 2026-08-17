@@ -1,144 +1,232 @@
 # Hi, I'm Muhammad Hakim 👋
 
-Diploma in Information Technology student at UTHM — building real systems, not just projects.
+I'm a Diploma in Information Technology student at UTHM focused on **Platform Engineering and Cloud Infrastructure**.
 
-I focus on **infrastructure, networking, and system operations**, with hands-on experience running production-like environments, designing resilient architectures, and managing real users.
+I enjoy working beyond the application layer — understanding how systems are deployed, automated, monitored, recovered, and maintained.
 
-My approach is simple:
-**build → deploy → break → monitor → fix → document → improve**
+My projects have taken me across **networking, Linux, backend development, infrastructure, cloud, observability, and CI/CD**, usually by building something first and learning whatever is necessary to operate it properly.
+
+**Build → deploy → break → observe → fix → document → improve.**
 
 ---
 
 ## 🔥 Featured Projects
 
-### 🚀 StudexHub (Production System)
+### 🚀 StudexHub
 
-A live student productivity platform designed, deployed, and operated with real infrastructure practices.
+A student productivity platform that became my main environment for learning how applications behave once they leave localhost.
 
-**What makes this different:**
+Rather than stopping at application development, I built and operated the supporting infrastructure around it.
 
-* Deployed with **Docker + Nginx + Cloudflare Tunnel**
-* Real users (live system, not just localhost)
-* Designed with **operational thinking (runbooks, monitoring, recovery)**
+**Platform & infrastructure**
 
-**Key implementations:**
+* Containerized application and PostgreSQL using **Docker Compose**
+* **Nginx** reverse proxy
+* Secure external access through **Cloudflare Tunnel**
+* Linux-based deployment and service management
+* Backup and recovery workflows
 
-* Containerized app + PostgreSQL with Docker Compose
-* Reverse proxy with Nginx
-* Custom-built authentication system
-* Monitoring stack: **Prometheus + Grafana + Alertmanager**
-* Telegram-based control plane (restart, backup, alerts)
-* Email notification system (Gmail API integration)
-* CI pipeline (lint, build, secret scanning)
+**Observability & operations**
 
-**Ops mindset:**
+* **Prometheus + Grafana + Alertmanager**
+* Application and infrastructure health monitoring
+* Structured operational logging
+* Telegram-based alerts and administrative actions
+* Incident handling and recovery documentation
+* Runbooks for recurring operational procedures
 
-* Defined **MTTD (~10s), MTTR (~5 min)**
-* Structured logging + incident handling
-* Backup & recovery workflows
-* Clear separation between app layer and infrastructure
+**Delivery**
+
+* GitHub Actions CI pipeline
+* Linting and build validation
+* Secret scanning
+* Separation between application and infrastructure concerns
+
+StudexHub was the project that shifted my interest from simply developing applications toward **operating and engineering the platforms underneath them**.
 
 ---
 
 ### 🌐 Enterprise Campus Network Design
 
-A full-scale simulated campus network built with enterprise architecture principles.
+A simulated campus network designed around enterprise networking principles rather than a minimal coursework topology.
 
-**Architecture:**
+**Architecture**
 
-* Three-tier model: **Core / Distribution / Access**
-* VLAN segmentation: Staff, Guest, VoIP, Management
+* Three-tier **Core / Distribution / Access** design
+* VLAN segmentation for Staff, Guest, VoIP, and Management networks
+* Structured IP addressing and subnet planning
 
-**Key implementations:**
+**Implemented technologies**
 
-* Inter-VLAN routing (L3 + Router-on-a-stick)
-* **HSRP** for gateway redundancy
 * **OSPF** dynamic routing
-* Centralized DHCP with relay
-* VoIP with CME + Option 150
-* ACL-based network security (Guest isolation)
+* **HSRP** gateway redundancy
+* Inter-VLAN routing
+* Router-on-a-stick
+* Centralized DHCP and DHCP relay
+* ACL-based network segmentation
+* Cisco CME and DHCP Option 150 for VoIP
 
-**Focus areas:**
+**Engineering focus**
 
-* Fault tolerance & failover testing
-* Realistic traffic flow design
+* Redundancy and failover behaviour
+* Traffic-flow design
+* Failure testing
 * CLI-based troubleshooting
+* Network segmentation and access control
+
+This project formed much of the networking foundation I now apply to infrastructure and cloud systems.
 
 ---
 
-### 🤖 Mini Control Plane (Telegram Bot)
+### ☁️ Cloud & Infrastructure Labs
 
-A lightweight system operations tool for managing infrastructure remotely.
+A growing collection of infrastructure projects focused on translating systems and networking knowledge into reproducible cloud environments.
 
-**Capabilities:**
+**Current areas**
 
-* Service restart with confirmation flow
-* Backup trigger system
-* Health status checks
-* Alert forwarding from monitoring stack
+* **AWS**
+* **Terraform**
+* EC2 provisioning
+* Security groups and network configuration
+* Automated instance bootstrapping
+* Infrastructure lifecycle management
+* Linux cloud workloads
 
-**Design principles:**
-
-* Runs under a **low-privilege system user**
-* Strict command allowlist
-* Action logging for auditability
-
----
-
-## 🛠️ Technical Skills
-
-**Infrastructure & Systems**
-
-* Linux (Debian / Ubuntu Server)
-* Systemd, SSH, server management
-
-**Networking**
-
-* VLAN, OSPF, ACL, HSRP
-* Network design & troubleshooting
-
-**DevOps / Platform**
-
-* Docker & Docker Compose
-* Nginx (reverse proxy)
-* Cloudflare Tunnel & Access
-* GitHub Actions (CI basics)
-
-**Monitoring & Operations**
-
-* Prometheus, Grafana, Alertmanager
-* Logging & incident handling
-* Runbooks & operational workflows
-
-**Programming**
-
-* TypeScript (Next.js)
-* Python (automation, bots)
-* SQL (PostgreSQL, Prisma ORM)
+The goal is to treat infrastructure as **versioned, reproducible software** rather than manually configured machines.
 
 ---
 
-## 🎯 Current Focus
+### 🛠️ Infrastructure Control & Automation
 
-* Strengthening **Linux system administration (deep level)**
-* Advancing **networking → infrastructure → cloud pathway**
-* Improving **observability, reliability, and automation**
-* Scaling systems from **homelab → production-grade practices**
+Small tools and workflows built to simplify operating infrastructure.
+
+Examples include:
+
+* Remote service health checks
+* Controlled service restart workflows
+* Backup triggers
+* Monitoring alert forwarding
+* Python and Bash automation
+* Low-privilege administrative tooling
+* Operational logging and audit trails
+
+These experiments focus on reducing repetitive operational work while keeping administrative actions explicit and controlled.
 
 ---
 
-## 🧠 Mindset
+## 🧰 Technical Stack
 
-I don’t just build features. I think in terms of:
+### Infrastructure & Linux
 
-* Failure scenarios
-* Recovery speed
-* System reliability
-* Long-term maintainability
+* Linux — Fedora, Debian, Ubuntu Server
+* systemd
+* SSH
+* Bash
+* KVM / libvirt
+* Server administration and troubleshooting
+
+### Cloud & Infrastructure as Code
+
+* AWS
+* Terraform
+* Cloudflare
+* Infrastructure provisioning
+* Cloud networking fundamentals
+* Linux cloud workloads
+
+### Containers & Platform
+
+* Docker
+* Docker Compose
+* Nginx
+* Reverse proxies
+* Containerized application deployment
+* Service orchestration fundamentals
+
+### CI/CD & Automation
+
+* GitHub Actions
+* Python automation
+* Bash scripting
+* Build and validation pipelines
+* Secret scanning
+* Automated infrastructure workflows
+
+### Observability & Operations
+
+* Prometheus
+* Grafana
+* Alertmanager
+* Application and infrastructure monitoring
+* Operational alerting
+* Structured logging
+* Runbooks
+* Incident and recovery workflows
+
+### Networking
+
+* TCP/IP
+* Subnetting
+* VLANs
+* OSPF
+* HSRP
+* ACLs
+* DHCP
+* Network design and troubleshooting
+
+### Programming & Data
+
+* Python
+* TypeScript / JavaScript
+* SQL
+* PostgreSQL
+* MariaDB
+* PHP
+* Prisma ORM
+
+---
+
+## 🧭 Current Direction
+
+I'm currently developing toward roles involving:
+
+**Platform Engineering · Cloud Engineering · Site Reliability Engineering**
+
+My current focus is strengthening the intersection between:
+
+* Linux systems
+* Networking
+* Cloud architecture
+* Infrastructure as Code
+* CI/CD
+* Observability
+* Containers
+* Kubernetes
+* Infrastructure automation
+
+I'm particularly interested in understanding how systems behave **after deployment** — reliability, automation, failure modes, monitoring, scalability, and maintainability.
+
+---
+
+## 🧪 Current Lab
+
+I'm building an on-demand home infrastructure environment using a Debian machine as a small private compute platform.
+
+The lab is intended for:
+
+* Terraform-managed **KVM/libvirt VMs**
+* Local infrastructure provisioning
+* Kubernetes experimentation
+* Self-hosted CI workloads
+* Networking labs
+* Linux administration
+* Testing infrastructure changes safely before applying similar concepts in cloud environments
+
+The long-term goal is to use the lab as a small environment for practicing **Infrastructure as Code, platform automation, and cloud-like infrastructure management**.
 
 ---
 
 ## 📫 Contact
 
-* LinkedIn: https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8
-* Email: [hakimz.7117@gmail.com](mailto:hakimz.7117@gmail.com)
+* **LinkedIn:** [Muhammad Hakim Za'aba](https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8)
+* **Email:** [hakimz.7117@gmail.com](mailto:hakimz.7117@gmail.com)
