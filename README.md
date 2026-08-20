@@ -228,5 +228,5 @@ The long-term goal is to use the lab as a small environment for practicing **Inf
 
 ## 📫 Contact
 
-* **LinkedIn:** [Muhammad Hakim Za'aba](https://www.linkedin.com/in/muhammad-hakim-zaaba-27b22a3b8)
+* **LinkedIn:** [Muhammad Hakim Za'aba](https://www.linkedin.com/in/muhammad-hakim-zaaba)
 * **Email:** [hakimz.7117@gmail.com](mailto:hakimz.7117@gmail.com)
