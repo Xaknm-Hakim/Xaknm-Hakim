@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Hakim — aspiring platform engineer</title>
+  <desc id="desc">A terminal-inspired dark dashboard with a simple infrastructure status line and platform engineering focus.</desc>
+  <rect width="1200" height="280" rx="18" fill="#101820" />
+  <rect x="1" y="1" width="1198" height="278" rx="17" fill="none" stroke="#31424d" stroke-width="2" />
+  <circle cx="38" cy="34" r="7" fill="#ff6b6b" />
+  <circle cx="62" cy="34" r="7" fill="#ffd166" />
+  <circle cx="86" cy="34" r="7" fill="#06d6a0" />
+  <text x="112" y="40" fill="#a8bac5" font-family="monospace" font-size="15">hakim@infra: ~</text>
+  <text x="72" y="112" fill="#71e0b5" font-family="monospace" font-size="17">$ whoami</text>
+  <text x="72" y="169" fill="#f2f6f8" font-family="sans-serif" font-size="42" font-weight="700">Muhammad Hakim</text>
+  <text x="74" y="207" fill="#a8bac5" font-family="sans-serif" font-size="20">Aspiring Platform Engineer</text>
+  <text x="74" y="244" fill="#71e0b5" font-family="monospace" font-size="15">linux  /  cloud  /  automation  /  reliability</text>
+  <path d="M912 94h190M912 123h151M912 152h174M912 181h132M912 210h190" stroke="#31424d" stroke-width="8" stroke-linecap="round" />
+  <circle cx="1120" cy="94" r="5" fill="#71e0b5" />
+  <circle cx="1074" cy="123" r="5" fill="#71e0b5" />
+  <circle cx="1099" cy="152" r="5" fill="#71e0b5" />
+  <circle cx="1057" cy="181" r="5" fill="#71e0b5" />
+  <circle cx="1120" cy="210" r="5" fill="#71e0b5" />
+</svg>

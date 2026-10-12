@@ -1,232 +1,91 @@
-# Hi, I'm Muhammad Hakim 👋
+<p align="center">
+  <img src="assets/infra-banner.svg" alt="Terminal-inspired banner introducing Muhammad Hakim as an aspiring platform engineer" width="100%">
+</p>
 
-I'm a Diploma in Information Technology student at UTHM focused on **Platform Engineering and Cloud Infrastructure**.
+<p align="center">
+  <strong>ASPIRING PLATFORM ENGINEER</strong> · Cloud Engineering · Site Reliability Engineering
+  <br>
+  Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM)
+</p>
 
-I enjoy working beyond the application layer — understanding how systems are deployed, automated, monitored, recovered, and maintained.
+<p align="center">
+  <code>Build → Deploy → Break → Observe → Fix → Document → Improve</code>
+</p>
 
-My projects have taken me across **networking, Linux, backend development, infrastructure, cloud, observability, and CI/CD**, usually by building something first and learning whatever is necessary to operate it properly.
+I learn by building and operating practical systems: Linux workloads, containerized services, network designs, monitoring, and automation. My goal is to grow into platform engineering by understanding not only how systems are deployed, but how they behave when something fails.
 
-**Build → deploy → break → observe → fix → document → improve.**
+## Engineering projects
 
----
+### StudexHub — self-hosted application platform
 
-## 🔥 Featured Projects
+A full-stack academic management app deployed on a self-hosted Linux server. Its public repository includes a Docker Compose application and PostgreSQL service; project documentation describes the Nginx and Cloudflare Tunnel deployment path. A companion repository contains the Prometheus monitoring stack.
 
-### 🚀 StudexHub
+- Docker Compose, PostgreSQL, Nginx, Cloudflare Tunnel
+- Prometheus, Grafana, Alertmanager, and Blackbox Exporter
+- Operational runbooks and a separate Python control-plane project for health checks, controlled service operations, and database backups
+- The public StudexHub repository currently has no checked-in GitHub Actions workflow, so CI/CD is not presented as an implemented feature
 
-A student productivity platform that became my main environment for learning how applications behave once they leave localhost.
+[StudexHub](https://github.com/Xaknm-Hakim/StudexHub) · [Monitoring stack](https://github.com/Xaknm-Hakim/Monitoring) · [Control plane](https://github.com/Xaknm-Hakim/mini-control-plane)
 
-Rather than stopping at application development, I built and operated the supporting infrastructure around it.
+### Enterprise campus network — simulated design
 
-**Platform & infrastructure**
+A Cisco Packet Tracer campus-network design documented with a topology image and project report. It is a simulation, not a claim of operating a production enterprise network.
 
-* Containerized application and PostgreSQL using **Docker Compose**
-* **Nginx** reverse proxy
-* Secure external access through **Cloudflare Tunnel**
-* Linux-based deployment and service management
-* Backup and recovery workflows
+- Three-tier core, distribution, and access architecture
+- VLANs, OSPF, HSRP, DHCP and relay, ACLs, and Cisco CME/VoIP
+- Documented failover and troubleshooting scenarios
 
-**Observability & operations**
+[Network design and report](https://github.com/Xaknm-Hakim/Network-Campus-Topology)
 
-* **Prometheus + Grafana + Alertmanager**
-* Application and infrastructure health monitoring
-* Structured operational logging
-* Telegram-based alerts and administrative actions
-* Incident handling and recovery documentation
-* Runbooks for recurring operational procedures
+### Cloud and infrastructure labs — learning track
 
-**Delivery**
+I am developing practical AWS and Terraform skills around EC2, security groups, Linux workloads, and reproducible infrastructure. **I do not currently have a public AWS/Terraform project to link**, so these are learning areas rather than portfolio claims.
 
-* GitHub Actions CI pipeline
-* Linting and build validation
-* Secret scanning
-* Separation between application and infrastructure concerns
+### Infrastructure control and automation
 
-StudexHub was the project that shifted my interest from simply developing applications toward **operating and engineering the platforms underneath them**.
+The public `mini-control-plane` project is a Python Telegram interface for host/service health checks and controlled StudexHub operations. Its code includes confirmation-oriented administrative actions, structured logging, service restart and PostgreSQL backup operations; the repository also includes a runbook. Bash is part of my broader automation toolkit, not a capability this project specifically demonstrates.
 
----
+[Review the implementation](https://github.com/Xaknm-Hakim/mini-control-plane)
 
-### 🌐 Enterprise Campus Network Design
+## Technical stack
 
-A simulated campus network designed around enterprise networking principles rather than a minimal coursework topology.
+Badges show technologies used in projects or tools I work with; learning-stage areas are called out separately below.
 
-**Architecture**
+**Linux & Infrastructure**<br>
+`Linux` `Fedora` `systemd` `KVM/libvirt`
 
-* Three-tier **Core / Distribution / Access** design
-* VLAN segmentation for Staff, Guest, VoIP, and Management networks
-* Structured IP addressing and subnet planning
+**Cloud & IaC**<br>
+`AWS · learning` `Terraform · learning` `Cloudflare Tunnel`
 
-**Implemented technologies**
+**Containers & Platform**<br>
+`Docker` `Docker Compose` `Nginx` `PostgreSQL`
 
-* **OSPF** dynamic routing
-* **HSRP** gateway redundancy
-* Inter-VLAN routing
-* Router-on-a-stick
-* Centralized DHCP and DHCP relay
-* ACL-based network segmentation
-* Cisco CME and DHCP Option 150 for VoIP
+**Automation & CI/CD**<br>
+`Python` `Bash` `GitHub Actions · familiarity`
 
-**Engineering focus**
+**Observability**<br>
+`Prometheus` `Grafana` `Alertmanager`
 
-* Redundancy and failover behaviour
-* Traffic-flow design
-* Failure testing
-* CLI-based troubleshooting
-* Network segmentation and access control
+**Networking**<br>
+`VLANs` `OSPF` `HSRP` `ACLs` `DHCP`
 
-This project formed much of the networking foundation I now apply to infrastructure and cloud systems.
+**Programming & Databases**<br>
+`Python` `TypeScript / JavaScript` `SQL` `PostgreSQL` `Prisma`
 
----
+## Current engineering focus
 
-### ☁️ Cloud & Infrastructure Labs
+These are active learning and home-lab goals, not claims of production Kubernetes or cloud experience:
 
-A growing collection of infrastructure projects focused on translating systems and networking knowledge into reproducible cloud environments.
+- Terraform and reproducible infrastructure
+- KVM/libvirt home lab and Linux system administration
+- AWS architecture and cloud networking fundamentals
+- Container orchestration, with Kubernetes as a learning area
+- Platform automation, observability, and reliability engineering
 
-**Current areas**
+## GitHub activity
 
-* **AWS**
-* **Terraform**
-* EC2 provisioning
-* Security groups and network configuration
-* Automated instance bootstrapping
-* Infrastructure lifecycle management
-* Linux cloud workloads
+I have left out third-party contribution and language widgets. GitHub's native profile activity and repository language views are the more direct references, without adding fragile external statistics services.
 
-The goal is to treat infrastructure as **versioned, reproducible software** rather than manually configured machines.
+## Contact
 
----
-
-### 🛠️ Infrastructure Control & Automation
-
-Small tools and workflows built to simplify operating infrastructure.
-
-Examples include:
-
-* Remote service health checks
-* Controlled service restart workflows
-* Backup triggers
-* Monitoring alert forwarding
-* Python and Bash automation
-* Low-privilege administrative tooling
-* Operational logging and audit trails
-
-These experiments focus on reducing repetitive operational work while keeping administrative actions explicit and controlled.
-
----
-
-## 🧰 Technical Stack
-
-### Infrastructure & Linux
-
-* Linux — Fedora, Debian, Ubuntu Server
-* systemd
-* SSH
-* Bash
-* KVM / libvirt
-* Server administration and troubleshooting
-
-### Cloud & Infrastructure as Code
-
-* AWS
-* Terraform
-* Cloudflare
-* Infrastructure provisioning
-* Cloud networking fundamentals
-* Linux cloud workloads
-
-### Containers & Platform
-
-* Docker
-* Docker Compose
-* Nginx
-* Reverse proxies
-* Containerized application deployment
-* Service orchestration fundamentals
-
-### CI/CD & Automation
-
-* GitHub Actions
-* Python automation
-* Bash scripting
-* Build and validation pipelines
-* Secret scanning
-* Automated infrastructure workflows
-
-### Observability & Operations
-
-* Prometheus
-* Grafana
-* Alertmanager
-* Application and infrastructure monitoring
-* Operational alerting
-* Structured logging
-* Runbooks
-* Incident and recovery workflows
-
-### Networking
-
-* TCP/IP
-* Subnetting
-* VLANs
-* OSPF
-* HSRP
-* ACLs
-* DHCP
-* Network design and troubleshooting
-
-### Programming & Data
-
-* Python
-* TypeScript / JavaScript
-* SQL
-* PostgreSQL
-* MariaDB
-* PHP
-* Prisma ORM
-
----
-
-## 🧭 Current Direction
-
-I'm currently developing toward roles involving:
-
-**Platform Engineering · Cloud Engineering · Site Reliability Engineering**
-
-My current focus is strengthening the intersection between:
-
-* Linux systems
-* Networking
-* Cloud architecture
-* Infrastructure as Code
-* CI/CD
-* Observability
-* Containers
-* Kubernetes
-* Infrastructure automation
-
-I'm particularly interested in understanding how systems behave **after deployment** — reliability, automation, failure modes, monitoring, scalability, and maintainability.
-
----
-
-## 🧪 Current Lab
-
-I'm building an on-demand home infrastructure environment using a Debian machine as a small private compute platform.
-
-The lab is intended for:
-
-* Terraform-managed **KVM/libvirt VMs**
-* Local infrastructure provisioning
-* Kubernetes experimentation
-* Self-hosted CI workloads
-* Networking labs
-* Linux administration
-* Testing infrastructure changes safely before applying similar concepts in cloud environments
-
-The long-term goal is to use the lab as a small environment for practicing **Infrastructure as Code, platform automation, and cloud-like infrastructure management**.
-
----
-
-## 📫 Contact
-
-* **LinkedIn:** [Muhammad Hakim Za'aba](https://www.linkedin.com/in/muhammad-hakim-zaaba)
-* **Email:** [hakimz.7117@gmail.com](mailto:hakimz.7117@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/muhammad-hakim-zaaba) · [Email](mailto:hakimz.7117@gmail.com)
