@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/infra-banner.svg" alt="Terminal-inspired banner introducing Muhammad Hakim as an aspiring platform engineer" width="100%">
+  <img src="assets/infra-banner.svg" alt="Terminal-inspired banner introducing Muhammad Hakim and his platform engineering direction" width="100%">
 </p>
 
 <p align="center">
-  <strong>ASPIRING PLATFORM ENGINEER</strong> · Cloud Engineering · Site Reliability Engineering
+  <strong>PLATFORM ENGINEERING → CLOUD ENGINEERING → SITE RELIABILITY ENGINEERING</strong>
   <br>
   Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM)
 </p>
@@ -12,59 +12,59 @@
   <code>Build → Deploy → Break → Observe → Fix → Document → Improve</code>
 </p>
 
-I learn by building and operating practical systems: Linux workloads, containerized services, network designs, monitoring, and automation. My goal is to grow into platform engineering by understanding not only how systems are deployed, but how they behave when something fails.
+I am a Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM), building practical software and infrastructure projects as I develop toward platform engineering, cloud engineering, and—over time—site reliability engineering. I learn through the full lifecycle:
 
-## Engineering projects
+`Build → Deploy → Break → Observe → Fix → Document → Improve`
 
-### StudexHub — self-hosted application platform
+## Selected engineering projects
 
-A full-stack academic management app deployed on a self-hosted Linux server. Its public repository includes a Docker Compose application and PostgreSQL service; project documentation describes the Nginx and Cloudflare Tunnel deployment path. A companion repository contains the Prometheus monitoring stack.
+### PersonalHub — personal productivity platform
 
-- Docker Compose, PostgreSQL, Nginx, Cloudflare Tunnel
-- Prometheus, Grafana, Alertmanager, and Blackbox Exporter
-- Operational runbooks and a separate Python control-plane project for health checks, controlled service operations, and database backups
-- The public StudexHub repository currently has no checked-in GitHub Actions workflow, so CI/CD is not presented as an implemented feature
+A privately hosted, single-owner application for tasks, assignments, projects, notes, and planning. PersonalHub keeps domain rules in application services and exposes a versioned API with scoped, expiring tokens for trusted clients. Its v3.2 implementation includes a manual, one-way Google Calendar projection.
 
-[StudexHub](https://github.com/Xaknm-Hakim/StudexHub) · [Monitoring stack](https://github.com/Xaknm-Hakim/Monitoring) · [Control plane](https://github.com/Xaknm-Hakim/mini-control-plane)
+- Next.js, TypeScript, Prisma, and PostgreSQL
+- Owner-authenticated browser app and normalized Today, Upcoming, capture, and task API operations
+- Manual, one-way Google Calendar projection for eligible dated tasks and assignments; no background or inbound synchronization
+- Docker-based runtime, Terraform/Ansible infrastructure workflows, backup and restore documentation, and isolated automated test workflows
+
+[PersonalHub repository](https://github.com/Xaknm-Hakim/PersonalHub) · [API contract](https://github.com/Xaknm-Hakim/PersonalHub/blob/main/docs/API.md) · [Google Calendar design](https://github.com/Xaknm-Hakim/PersonalHub/blob/main/docs/GOOGLE-CALENDAR.md)
+
+### StudexHub — academic management application
+
+A full-stack academic app for semesters, courses, assignments, schedules, GPA/CGPA, and notifications, paired with a self-hosted Linux deployment.
+
+- Next.js, TypeScript, PostgreSQL, Prisma, and Docker Compose
+- Separate Monitoring and mini-control-plane projects extend the story into service health, alerting, and gated operations
+
+[StudexHub](https://github.com/Xaknm-Hakim/StudexHub) · [Monitoring](https://github.com/Xaknm-Hakim/Monitoring) · [Mini control plane](https://github.com/Xaknm-Hakim/mini-control-plane)
 
 ### Enterprise campus network — simulated design
 
-A Cisco Packet Tracer campus-network design documented with a topology image and project report. It is a simulation, not a claim of operating a production enterprise network.
+A Cisco Packet Tracer campus-network design exploring a three-tier layout, segmentation, redundant routing, central services, and documented failure scenarios. This is a simulation, not an operating production network.
 
-- Three-tier core, distribution, and access architecture
-- VLANs, OSPF, HSRP, DHCP and relay, ACLs, and Cisco CME/VoIP
-- Documented failover and troubleshooting scenarios
+- VLANs, OSPF, HSRP, DHCP relay, ACLs, and VoIP
+- Design report includes connectivity, failover, and troubleshooting checks
 
 [Network design and report](https://github.com/Xaknm-Hakim/Network-Campus-Topology)
 
-### Cloud and infrastructure labs — learning track
-
-I am developing practical AWS and Terraform skills around EC2, security groups, Linux workloads, and reproducible infrastructure. **I do not currently have a public AWS/Terraform project to link**, so these are learning areas rather than portfolio claims.
-
-### Infrastructure control and automation
-
-The public `mini-control-plane` project is a Python Telegram interface for host/service health checks and controlled StudexHub operations. Its code includes confirmation-oriented administrative actions, structured logging, service restart and PostgreSQL backup operations; the repository also includes a runbook. Bash is part of my broader automation toolkit, not a capability this project specifically demonstrates.
-
-[Review the implementation](https://github.com/Xaknm-Hakim/mini-control-plane)
-
 ## Technical stack
 
-Badges show technologies used in projects or tools I work with; learning-stage areas are called out separately below.
+These technologies are represented through project work; this is a developing toolkit, not a claim of specialist-level experience.
 
 **Linux & Infrastructure**<br>
-`Linux` `Fedora` `systemd` `KVM/libvirt`
+`Linux` `systemd` `Docker` `Docker Compose` `Nginx` `SSH` `KVM/libvirt`
 
 **Cloud & IaC**<br>
-`AWS · learning` `Terraform · learning` `Cloudflare Tunnel`
+`AWS` `Terraform` `Ansible` `Cloudflare Tunnel` — actively developing cloud architecture depth
 
 **Containers & Platform**<br>
 `Docker` `Docker Compose` `Nginx` `PostgreSQL`
 
 **Automation & CI/CD**<br>
-`Python` `Bash` `GitHub Actions · familiarity`
+`Python` `Bash` `GitHub Actions`
 
 **Observability**<br>
-`Prometheus` `Grafana` `Alertmanager`
+`Prometheus` `Grafana` `Alertmanager` `Blackbox Exporter`
 
 **Networking**<br>
 `VLANs` `OSPF` `HSRP` `ACLs` `DHCP`
@@ -76,15 +76,11 @@ Badges show technologies used in projects or tools I work with; learning-stage a
 
 These are active learning and home-lab goals, not claims of production Kubernetes or cloud experience:
 
-- Terraform and reproducible infrastructure
+- Cloud architecture and reproducible infrastructure with Terraform
 - KVM/libvirt home lab and Linux system administration
 - AWS architecture and cloud networking fundamentals
-- Container orchestration, with Kubernetes as a learning area
-- Platform automation, observability, and reliability engineering
-
-## GitHub activity
-
-I have left out third-party contribution and language widgets. GitHub's native profile activity and repository language views are the more direct references, without adding fragile external statistics services.
+- Infrastructure automation, deployment, observability, and recovery workflows
+- Reliability engineering foundations
 
 ## Contact
 
