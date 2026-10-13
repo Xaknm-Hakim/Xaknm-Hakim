@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>PLATFORM ENGINEERING → CLOUD ENGINEERING → SITE RELIABILITY ENGINEERING</strong>
+  <strong>Platform Engineering · Cloud Infrastructure · Systems Reliability</strong>
   <br>
   Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM)
 </p>
@@ -12,9 +12,7 @@
   <code>Build → Deploy → Break → Observe → Fix → Document → Improve</code>
 </p>
 
-I am a Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM), building practical software and infrastructure projects as I develop toward platform engineering, cloud engineering, and—over time—site reliability engineering. I learn through the full lifecycle:
-
-`Build → Deploy → Break → Observe → Fix → Document → Improve`
+I am a Diploma in Information Technology student at Universiti Tun Hussein Onn Malaysia (UTHM), with a primary interest in platform engineering and related areas of cloud infrastructure, automation, and systems reliability.
 
 ## Selected engineering projects
 
